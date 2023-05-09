@@ -56,7 +56,7 @@ function Products({ brand }) {
               <Link underline="hover" color="dark" href="/">
                 <h5 className="text-dark">Home</h5>
               </Link>
-              <Link underline="hover" color="dark" href="/Products">
+              <Link underline="hover" color="dark" href="/Pagination">
                 <h5 className="text-dark">Gallery</h5>
               </Link>
               <Typography color="text.primary">
@@ -192,7 +192,7 @@ function Products({ brand }) {
               <Link underline="hover" color="dark" href="/">
                 <h5 className="text-dark">Home</h5>
               </Link>
-              <Link underline="hover" color="dark" href="/Products">
+              <Link underline="hover" color="dark" href="/Pagination">
                 <h5 className="text-dark">Gallery</h5>
               </Link>
               <Typography color="text.primary">
@@ -328,7 +328,7 @@ function Products({ brand }) {
               <Link underline="hover" color="dark" href="/">
                 <h5 className="text-dark">Home</h5>
               </Link>
-              <Link underline="hover" color="dark" href="/Products">
+              <Link underline="hover" color="dark" href="/Pagination">
                 <h5 className="text-dark">Gallery</h5>
               </Link>
               <Typography color="text.primary">
