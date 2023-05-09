@@ -1,0 +1,17 @@
+#signInCon {
+  background-image: url("../Images/SignInBG.png");
+}
+#signUpCon {
+  background-image: url("../Images/SignUp.png");
+}
+@media all and (max-width: 1200px) {
+  #signUpCon {
+    background-image: none;
+  }
+  #signInCon {
+    background-image: none;
+  }
+  .IN {
+    justify-content: center;
+  }
+}

@@ -1,6 +1,8 @@
 # Luxury Cars
 
 ##### A fully responsive React e-commerce web application for Cars sale.
+#### We are a platform that represents a link between people who want to buy a unique car of their own and car dealerships in Jordan, and through us cars will be offered for many brands at an exclusive price with special discounts on cars through the website. 
+
 
 
 

@@ -1,0 +1,72 @@
+.contact-form {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contact-form form {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: linear-gradient(to right bottom, #1abc9c, #0a2b41);
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.contact-form .form-group label {
+  color: #fff;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #080606;
+  padding: 10px 0;
+  font-size: 18px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  outline: none;
+}
+
+.contact-form button[type="submit"] {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"]:hover {
+  background: #fff;
+  color: #1abc9c;
+  cursor: pointer;
+}
+
+.contact-form input::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.contact-form input::-moz-placeholder,
+.contact-form textarea::-moz-placeholder {
+  color: #fff;
+}
+
+.contact-form input:-ms-input-placeholder,
+.contact-form textarea:-ms-input-placeholder {
+  color: #fff;
+}

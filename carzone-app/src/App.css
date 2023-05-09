@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{
+  font-family: 'roboto';
+}
+body{
+  background-color: #ffffff !important;
+  background-image: url(../src/Images/gradient-squares.png);
+}

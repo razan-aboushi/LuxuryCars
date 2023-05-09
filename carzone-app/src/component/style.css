@@ -1,0 +1,74 @@
+.bigCon {
+  background-position-y: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 90px 75px 270px black;
+  height: 50vh;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card-img-top {
+  margin-bottom: 3rem;
+}
+
+.mask h1 {
+  font-size: 80px;
+}
+.Colorize {
+  margin: 0 5px;
+}
+.Colorize button {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.Colorize .One {
+  background-color: #e3e9e9;
+}
+
+.Colorize .Two {
+  background-color: #4c5156;
+}
+.Colorize .Three {
+  background-color: #00031e;
+}
+.Colorize .Four {
+  background-color: #1a1c37;
+}
+.Colorize .Four {
+  background-color: #e20500;
+}
+
+.Color-con {
+  margin-top: 3rem;
+}
+@media (max-width: 786px) {
+  .Color-con {
+    margin: 3rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    margin-bottom: 0;
+  }
+  .Color-con {
+    margin: 0rem 0 3rem 0;
+  }
+}
+
+.Car-features {
+  list-style: none;
+  padding: 0;
+}
+.Car-features li h3 {
+  display: block;
+}
+.Car-features li p {
+  margin-left: 1rem;
+}

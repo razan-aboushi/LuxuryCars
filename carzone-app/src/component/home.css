@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  font-family: "roboto";
+}
+
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 90vh;
+}
+
+.carousel-item:nth-child(1) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+}
+
+.navbar .nav-link {
+  color: #000000;
+  font-size: 15px !important;
+}
+
+.carousel-control-next-icon::after {
+  content: none;
+}
+.carousel-control-prev-icon::after {
+  content: none;
+}
+
+#nav-color {
+  box-shadow: inset 1px -3px 5px #00000064;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  align-items: end;
+}
+
+#hero-1 {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+#hero-2 {
+  color: #ffffff;
+  text-shadow: 0 3px 1px black;
+}
+
+#hero-3 {
+  color: #ffffff;
+  text-shadow: 0 3px 1px rgb(0, 0, 0);
+}
+
+.navbar .nav-link {
+  color: #000000;
+  font-size: 20px;
+  margin: 0px 10px 0px 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar .nav-link:after {
+  bottom: 4px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: #000000;
+  opacity: 0.6;
+  transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar .nav-link:hover:after {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.navbar .nav-link:hover {
+  color: #1976d2;
+}
+
+#carzone {
+  color: #1976d2;
+  text-shadow: 0 1px 0 #030c5d, 0 2px 0 #030c5d, 0 3px 0 #030c5d,
+    0 4px 0 #02083f, 0 5px 0 #010636, 0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+#g-btn {
+  background-color: #000000;
+  color: white;
+}
+
+#grad {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 90.31%,
+    rgba(0, 0, 0, 0.59) 100%
+  );
+  /* height: 24rem; */
+}
+
+#div-sq {
+  height: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#div-sq img:hover {
+  scale: 1.1;
+}
+
+#top {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #000000;
+}
+
+#cont-cards .card:hover {
+  scale: 1.1;
+}
+
+#discount {
+  background-image: url("https://global.toyota/pages/news/images/2022/11/16/1345/20221116_01_kv_w1920.jpg");
+  background-color: #00000045;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+}
+#dis-text {
+  color: #ffffff;
+}
+
+#car1 h2 {
+  text-shadow: 0 3px 1px rgb(42, 42, 42);
+}
+
+#price:focus,
+#price:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.btn-white:hover {
+  scale: 1.1;
+}
+
+.container-fulid {
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.container-fulid h1 {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 50px;
+  animation: slide-up 0.8s ease-out;
+}
+
+.container-fulid .row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  animation: slide-up 0.8s ease-out;
+}
+
+.container-fulid .col-lg-4 {
+  flex-basis: 350px;
+  height: auto;
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.container-fulid .col-lg-4:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container-fulid .col-lg-4 img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.container-fulid .col-lg-4 h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.container-fulid .col-lg-4 p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Animation */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-fulid .row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .container-fulid .col-lg-4 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
