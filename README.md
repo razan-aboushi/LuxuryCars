@@ -1,8 +1,5 @@
 # Luxury Cars
 
-# Luxury Cars
-
-
 ##### A fully responsive React e-commerce web application for Cars sale.
 
 
