@@ -77,65 +77,63 @@ function About() {
           </Typography>
         </Breadcrumbs>
       </div>
-      <div className="container-fluid bg-light py-5 mx-0 w-100 animate__animated animate__fadeIn d-flex justify-content-center">
+
+      <div class="container-fluid bg-light py-5 mx-0 w-100 animate__animated animate__fadeIn d-flex justify-content-center">
         <div className="row">
           <div className="col-md-12">
             <div className="text-center">
               <h2 className="section-heading text-uppercase mt-5 mb-5">
                 About Our Company
               </h2>
-            </div>
-            <p className="text-center">
-              We are a company that specializes in providing top-quality
-              products and services to our clients. Our team consists of highly
-              skilled professionals who are committed to delivering exceptional
-              results that exceed our clients' expectations. We strive to build
-              long-lasting relationships with our clients based on trust,
-              integrity, and mutual respect.
-            </p>
-            <div className="container mt-5 mb-5">
-              <div className="text-center">
-                <h2 className="section-heading text-uppercase mt-5 mb-5">
-                  Our Vision and Mission
-                </h2>
+              <div className="d-flex justify-content-center">
+                <div className="col-md-10">
+
+                  <div className="d-flex justify-content-start align-items-center mt-5">
+                    <img
+                      src="https://cfx-wp-images.imgix.net/2020/01/Car-Dealer-Talking-With-Customers.jpg?auto=compress%2Cformat&fit=crop&h=620&ixlib=php-3.3.0&w=930&wpsize=neve-blog&s=bb5420e7fbc17c16c14120b352704b3b"
+                      alt="image about"
+                      style={{ width: '40%', boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.2)', marginRight: '60px' }}
+                      class="animate__animated animate__fadeInLeft"
+                    />
+                    <header>
+                      <h3 class="text-left mb-4 text-left">Welcome To Luxury Cars</h3>
+                      <h5 class="text-left animate__animated animate__fadeInRight">
+                        We are a company that specializes in providing top-quality products and services to our clients. Our team consists of highly skilled professionals who are committed to delivering exceptional results that exceed our clients' expectations. We strive to build long-lasting relationships with our clients based on trust, integrity, and mutual respect.
+                      </h5>
+                    </header>
+
+
+                  </div>
+                </div>
               </div>
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="p-5">
-                    <h3 className="section-subheading text-muted mb-4">
+
+            </div>
+
+
+
+
+
+
+            <div class="container mt-5 mb-5">
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card p-5 border-0 animate__animated animate__fadeInLeft" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.2)' }}>
+                    <h3 class="section-subheading text-muted mb-4">
                       Our Vision
                     </h3>
-                    <p className="text-justify mt-2">
-                      Our vision is to become the leading provider of innovative
-                      cars in our industry. We aspire to achieve this by staying
-                      at the forefront of technological advancements and
-                      constantly improving our skills and knowledge. We want to
-                      be known for our commitment to excellence and for
-                      delivering exceptional value to our clients.providing an
-                      exceptional user experience that makes it easy and
-                      enjoyable to browse and purchase cars, as well as offering
-                      a wide range of high-quality vehicles to suit different
-                      needs and budgets. evolve in response to changing customer
-                      needs and market trends.
+                    <p class="text-justify ">
+                      Our vision is to become the leading provider of innovative cars in our industry. We aspire to achieve this by staying at the forefront of technological advancements and constantly improving our skills and knowledge. We want to be known for our commitment to excellence and for delivering exceptional value to our clients.providing an exceptional user experience that makes it easy and enjoyable to browse and purchase cars, as well as offering a wide range of high-quality vehicles to suit different needs and budgets.
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-6">
-                  <div className="p-5">
-                    <h3 className="section-subheading text-muted mb-4">
+                <div class="col-lg-6">
+                  <div class="card p-5 border-0 animate__animated animate__fadeInRight" style={{ boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.2)' }}>
+                    <h3 class="section-subheading text-muted mb-4">
                       Our Mission
                     </h3>
-                    <p className="text-justify">
-                      Our mission is to provide our customers with the best car
-                      buying experience possible. We strive to offer a wide
-                      selection of high-quality vehicles at competitive prices,
-                      while providing exceptional customer service and support.
-                      We aim to create a trustworthy and transparent car-buying
-                      process by providing accurate and detailed information
-                      about our vehicles and their histories. Our goal is to
-                      make it easy for our customers to find the car of their
-                      dreams, and to provide them with the resources and tools
-                      they need to make informed decisions.
+                    <p class="text-justify">
+                      Our mission is to provide our customers with the best car buying experience possible. We strive to offer a wide selection of high-quality vehicles at competitive prices, while providing exceptional customer service and support. We aim to create a trustworthy and transparent car-buying process by providing accurate and detailed information about our vehicles and their histories. Our goal is to make it easy for our customers to find the car of their dreams, and to provide them with the resources and tools they need to make informed decisions.
                     </p>
                   </div>
                 </div>
@@ -216,6 +214,7 @@ function About() {
             </div>
           ))}
         </div>
+
       </div>
     </>
   );
