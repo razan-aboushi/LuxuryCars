@@ -7,17 +7,7 @@ import Link from "@mui/material/Link";
 function HeroCart() {
   return (
     <>
-      <div className="d-flex m-5">
-        <Breadcrumbs aria-label="breadcrumb">
-          <Link underline="hover" color="dark" href="/">
-            <h5 className="text-dark">Home</h5>
-          </Link>
-          <Typography color="text.primary">
-            {" "}
-            <h5 className="text-dark">Cart</h5>
-          </Typography>
-        </Breadcrumbs>
-      </div>
+     
 
       <div class="seoLanding deliveryLanding redesign mb-4">
         <header class="banner">

@@ -3,11 +3,11 @@ import Payment from "./Payment";
 import HeroCart from "./heroCart";
 import { AuthContext } from "./AuthContext";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 function Cart() {
   const [Car, setCar] = useState(
-    JSON.parse(localStorage.getItem("car")) || undefined
-  );
+    JSON.parse(localStorage.getItem("car")) || undefined);
 
   const { auth } = useContext(AuthContext);
 
@@ -15,6 +15,9 @@ function Cart() {
     localStorage.removeItem("car");
     setCar({});
   }
+
+
+
 
   return (
     <>
@@ -37,7 +40,7 @@ function Cart() {
                 <div className="card-bodyCart">
                   <h5 className="card-title">{Car.type}</h5>
                   <p className="card-text text-center m-3">
-                    Price: {Car.price} JD
+                    Price: {Number(Car.discountedPrice)} JD
                   </p>
                 </div>
                 <div className="card-footer text-center">
@@ -56,11 +59,11 @@ function Cart() {
 
           <div className="mt-5 ms-4 h6 text-start">
             <p className="fw-bold h5 mb-4">The Price of the car :</p>
-            <p className="fw-bold mb-2">Sub-total: {Number(Car.price)} JD</p>
+            <p className="fw-bold mb-2">Sub-total: {Number(Car.discountedPrice)} JD</p>
             <hr />
             <p className="fw-bold mt-2 mb-2">Charge: 100 JD</p>
             <hr />
-            <p className="fw-bold mt-2">Total: {Number(Car.price) + 100} JD</p>
+            <p className="fw-bold mt-2">Total: {Number(Car.discountedPrice)+100} JD</p>
           </div>
         </div>
       ) : (
@@ -78,6 +81,21 @@ function Cart() {
           </HashLink>
         </div>
       )}
+
+
+      {!auth && Car && (
+        <div className="container text-center wow fadeInUp" data-wow-delay="0.1s">
+          <p className="fs-5 fw-bold my-4">Please log in to continue</p>
+
+          <Link to="/Registration">
+            <button className="btn btn-primary btn-lg mb-5">
+              CheckOut Payment
+            </button>
+          </Link>
+
+        </div>
+      )}
+
 
       {auth && Car && (
         <div>

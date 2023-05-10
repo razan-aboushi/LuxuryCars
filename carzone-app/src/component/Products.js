@@ -18,7 +18,7 @@ function Products({ brand }) {
   const [carId, setCarId] = useState();
   const [carImg, setCarImg] = useState();
   let cars_array = [];
-  const [allCars, setAllCars] = useState();
+  // const [allCars, setAllCars] = useState();
 
   toyota.map((car) => {
     cars_array.push(car);
@@ -132,9 +132,9 @@ function Products({ brand }) {
                       <h1 className="display-5 fw-bolder">{car.type} </h1>
                       <div className="fs-5 mb-5">
                         <span className="text-decoration-line-through">
-                          $45.00
+                          {car.price}
                         </span>
-                        <span> $40.00</span>
+                        <span> {car.discountedPrice}</span>
                       </div>
                       <p>
                         With a low center of gravity, it's designed to perform.
@@ -268,9 +268,9 @@ function Products({ brand }) {
                       <h1 className="display-5 fw-bolder">{car.type} </h1>
                       <div className="fs-5 mb-5">
                         <span className="text-decoration-line-through">
-                          $45.00
+                           {car.price}
                         </span>
-                        <span> $40.00</span>
+                        <span> {car.discountedPrice}</span>
                       </div>
                       <p>
                         With a low center of gravity, it's designed to perform.
@@ -404,9 +404,9 @@ function Products({ brand }) {
                       <h1 className="display-5 fw-bolder">{car.type} </h1>
                       <div className="fs-5 mb-5">
                         <span className="text-decoration-line-through">
-                          $45.00
+                           {car.price}
                         </span>
-                        <span> $40.00</span>
+                        <span> {car.discountedPrice}</span>
                       </div>
                       <p>
                         With a low center of gravity, it's designed to perform.

@@ -1,4 +1,3 @@
-/////////////////
 import React, { useState } from "react";
 import "./style.css";
 import { HashLink } from "react-router-hash-link";
@@ -6,7 +5,10 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 
-function Gallery({ posts, loading }) {
+
+
+function Gallery({ posts, loading })
+ {
   // console.log(posts);
   const [carId, setCarId] = useState();
   const [carImg, setCarImg] = useState();
@@ -14,8 +16,13 @@ function Gallery({ posts, loading }) {
   const [selectedCars, setSelectedCars] = useState(posts);
   const cars = posts;
   // console.log(cars);
+
+
+
+
   const onSearch = (event) => {
-    const filteredCars = cars.filter((car) => {
+    const filteredCars = cars.filter((car) => 
+    {
       if (
         car.type.toLowerCase().includes(event.target.value) ||
         car.type.includes(event.target.value)
@@ -26,6 +33,11 @@ function Gallery({ posts, loading }) {
     console.log(filteredCars);
     setSelectedCars(filteredCars);
   };
+
+
+
+  
+
   return (
     <>
       <div>
@@ -76,7 +88,8 @@ function Gallery({ posts, loading }) {
         </div>
       </div>
 
-      {cars?.map((car) => {
+      {cars?.map((car) => 
+      {
         return (
           <section className="py-2" key={car.id}>
             <div className="container p-5 px-lg-5 my-5 bg-light rounded-4">
@@ -141,8 +154,8 @@ function Gallery({ posts, loading }) {
                   <div className="small mb-1">SKU: BST-498</div>
                   <h1 className="display-5 fw-bolder">{car.type} </h1>
                   <div className="fs-5 mb-5">
-                    <span className="text-decoration-line-through">$45.00</span>
-                    <span> $40.00</span>
+                    <span className="text-decoration-line-through me-2">{car.price}</span>
+                    <span className="text-danger">{car.discountedPrice}</span>
                   </div>
                   <p>
                     With a low center of gravity, it's designed to perform. Feel

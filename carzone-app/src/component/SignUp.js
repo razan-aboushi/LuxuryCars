@@ -8,11 +8,11 @@ import { AuthContext } from "./AuthContext";
 import Swal from "sweetalert2";
 import "./Reg.css";
 
-const SignUp = () => {
+const SignUp = () => 
+{
   const navigate = useNavigate("/");
   const { auth, setAuth } = useContext(AuthContext);
   // console.log(auth);
-
   const [Email, SetEmail] = useState("");
   const [Password, SetPassword] = useState("");
   const [ConfirmPassword, SetConfirmPassword] = useState("");
@@ -29,8 +29,10 @@ const SignUp = () => {
       []
     );
   });
+
+  
   const clientId =
-    "67295596488-qjg965oe3oiirnmgcpcoeovccan8mnkj.apps.googleusercontent.com";
+  "67295596488-qjg965oe3oiirnmgcpcoeovccan8mnkj.apps.googleusercontent.com";
   const [showLoginButton, setShowLoginButton] = useState(true);
   const [showLogoutButton, setShowLogoutButton] = useState(false);
 
@@ -105,6 +107,9 @@ const SignUp = () => {
     SetConfirmPassword("");
     SetErrorMsg("");
   };
+
+
+
 
   return (
     <div

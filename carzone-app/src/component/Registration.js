@@ -16,9 +16,11 @@ const Registration = () => {
   const [ErrorMsg, setErrorMsg] = useState("");
 
   const clientId =
-    "67295596488-qjg965oe3oiirnmgcpcoeovccan8mnkj.apps.googleusercontent.com";
+  "67295596488-qjg965oe3oiirnmgcpcoeovccan8mnkj.apps.googleusercontent.com";
   const [showLoginButton, setShowLoginButton] = useState(true);
   const [showLogoutButton, setShowLogoutButton] = useState(false);
+
+
 
   const onLoginSuccess = (res) => {
     console.log("Login Success", res.profileObj);
@@ -31,6 +33,8 @@ const Registration = () => {
     navigate("/");
   };
 
+
+  
   const onFailureSuccess = (res) => {
     console.log("Login Failed", res);
   };

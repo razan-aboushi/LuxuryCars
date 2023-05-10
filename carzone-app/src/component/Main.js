@@ -16,6 +16,7 @@ import icon_2 from "../Images/min.png";
 import icon_3 from "../Images/shopcar.png";
 import { HashLink } from "react-router-hash-link";
 
+
 import { Link } from "react-router-dom";
 import "./home.css";
 

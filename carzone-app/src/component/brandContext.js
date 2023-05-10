@@ -2,7 +2,8 @@ import { createContext, useState } from "react";
 
 export const BrandContext = createContext();
 
-export function BrandProvider({ children }) {
+export function BrandProvider({ children }) 
+{
   const [brand, setBrand] = useState("all");
   return (
     <>
@@ -12,3 +13,5 @@ export function BrandProvider({ children }) {
     </>
   );
 }
+
+

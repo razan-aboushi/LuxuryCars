@@ -1,5 +1,4 @@
 /* Style of the payment page */
-
 .container-1 {
   width: 100%;
   margin: 0 auto;
@@ -255,4 +254,12 @@
     opacity: 1;
     transform: none;
   }
+}
+
+
+
+
+.btn-primary {
+  background-color: #04173c;
+  font-size: 1.2rem;
 }
