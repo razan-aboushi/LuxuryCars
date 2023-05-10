@@ -1,6 +1,5 @@
-import React from "react";
 import "../component/About.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
@@ -95,9 +94,9 @@ function About() {
                       style={{ width: '40%', boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.2)', marginRight: '60px' }}
                       class="animate__animated animate__fadeInLeft"
                     />
-                    <header>
-                      <h3 class="text-left mb-4 text-left">Welcome To Luxury Cars</h3>
-                      <h5 class="text-left animate__animated animate__fadeInRight">
+                    <header className="text-left">
+                      <h3 class= "mb-4 text-left">Welcome To Luxury Cars</h3>
+                      <h5 class="text-right animate__animated animate__fadeInRight">
                         We are a company that specializes in providing top-quality products and services to our clients. Our team consists of highly skilled professionals who are committed to delivering exceptional results that exceed our clients' expectations. We strive to build long-lasting relationships with our clients based on trust, integrity, and mutual respect.
                       </h5>
                     </header>

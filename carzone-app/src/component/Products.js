@@ -12,23 +12,12 @@ function Products({ brand }) {
   const hyundai = cars.hyundai;
   const BMW = cars.bmw;
 
-  const [carBrand, setCarBrand] = useContext(BrandContext);
-  // console.log(carBrand);
+  const [carBrand] = useContext(BrandContext);
 
   const [carId, setCarId] = useState();
   const [carImg, setCarImg] = useState();
-  let cars_array = [];
-  // const [allCars, setAllCars] = useState();
 
-  toyota.map((car) => {
-    cars_array.push(car);
-  });
-  hyundai.map((car) => {
-    cars_array.push(car);
-  });
-  BMW.map((car) => {
-    cars_array.push(car);
-  });
+
 
   return (
     <>
@@ -132,9 +121,9 @@ function Products({ brand }) {
                       <h1 className="display-5 fw-bolder">{car.type} </h1>
                       <div className="fs-5 mb-5">
                         <span className="text-decoration-line-through">
-                          {car.price}
+                          {car.price} 
                         </span>
-                        <span> {car.discountedPrice}</span>
+                        <span> {car.discountedPrice} </span>
                       </div>
                       <p>
                         With a low center of gravity, it's designed to perform.

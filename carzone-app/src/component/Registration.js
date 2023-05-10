@@ -9,14 +9,13 @@ import "./Reg.css";
 
 const Registration = () => {
   const navigate = useNavigate("/");
-  const { Auth, setAuth } = useContext(AuthContext);
+  const { setAuth } = useContext(AuthContext);
 
   const [Email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
   const [ErrorMsg, setErrorMsg] = useState("");
 
-  const clientId =
-  "67295596488-qjg965oe3oiirnmgcpcoeovccan8mnkj.apps.googleusercontent.com";
+  
   const [showLoginButton, setShowLoginButton] = useState(true);
   const [showLogoutButton, setShowLogoutButton] = useState(false);
 
