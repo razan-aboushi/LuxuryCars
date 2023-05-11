@@ -10,19 +10,24 @@ import Swal from "sweetalert2";
 
 function Cart() {
 
+
+  //After remove the car from the cart and click on the confirm message , the user will navigate directly to the gallery 
   function removeCarAndNavigate (carId, navigate)
    {
     handleRemoveItem(carId);
     navigate('/Pagination');
   };
 
-
-
+//Get the car that the user selected from the local storage
   const [Car, setCar] = useState(
     JSON.parse(localStorage.getItem("car")) || undefined);
 
+
+// to check if the user log in the website or not 
   const { auth } = useContext(AuthContext);
 
+
+// when remove the car from the cart , check for the id in the local storage and them delete the car and empty the local storage
   function handleRemoveItem(id) {
     localStorage.removeItem("car");
     setCar({});
