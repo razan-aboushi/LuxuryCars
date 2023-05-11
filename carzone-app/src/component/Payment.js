@@ -3,7 +3,9 @@ import Cards from "react-credit-cards-2";
 import "react-credit-cards-2/dist/es/styles-compiled.css";
 import Swal from "sweetalert2";
 
-function Payment() {
+function Payment()
+ {
+  
   const [tab, setTab] = useState("creditCard");
   const [focus, setFocus] = useState("");
 

@@ -47,6 +47,8 @@ const Main = () => {
         {/* Inner */}
         <div className="carousel-inner">
           {/* Single item */}
+
+
           <div className="carousel-item active">
             <video
               style={{ minWidth: "100%", minHeight: "100%" }}
@@ -99,7 +101,11 @@ const Main = () => {
                   </h1>
                   <h2 className="fw-normal" style={{ color: "#6AB7FE" }}>
                     SHOP YOUR FAVORITE BRAND
+                    <HashLink to="/Pagination/#">
+                      <button className="rounded ms-4" >Our Gallery</button>
+                    </HashLink>
                   </h2>
+
                 </div>
               </div>
             </div>
