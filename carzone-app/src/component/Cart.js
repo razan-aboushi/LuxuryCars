@@ -3,10 +3,21 @@ import Payment from "./Payment";
 import HeroCart from "./heroCart";
 import { AuthContext } from "./AuthContext";
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
+
+
 function Cart() {
+
+  function removeCarAndNavigate (carId, navigate)
+   {
+    handleRemoveItem(carId);
+    navigate('/Pagination');
+  };
+
+
+
   const [Car, setCar] = useState(
     JSON.parse(localStorage.getItem("car")) || undefined);
 
@@ -17,6 +28,7 @@ function Cart() {
     setCar({});
   }
 
+  const navigate = useNavigate();
 
 
 
@@ -38,38 +50,38 @@ function Cart() {
                   alt={Car.image1}
                   className="card-img-top mt-4"
                 />
+
                 <div className="card-bodyCart">
-                  <h5 className="card-title">{Car.type}</h5>
+                  <h5 className="card-title mt-4">{Car.type}</h5>
                   <p className="card-text text-center m-3">
                     Price: {Number(Car.discountedPrice)} JD
                   </p>
+                  <p className="card-text text-center mt-3 m-3">{Car.description}</p>
                 </div>
                 <div className="card-footer text-center">
-                  <HashLink smooth to="/Pagination/#">
-                    <div className="card-footer text-center">
-                      <button
-                        className="btn btn-danger"
-                        onClick={() => {
-                          Swal.fire({
-                            title: 'Are you sure?',
-                            text: 'You are about to remove this car from your cart',
-                            icon: 'warning',
-                            showCancelButton: true,
-                            confirmButtonColor: '#d33',
-                            cancelButtonColor: '#3085d6',
-                            confirmButtonText: 'Yes, remove it!',
-                            cancelButtonText: 'Cancel'
-                          }).then((result) => {
-                            if (result.isConfirmed) {
-                              handleRemoveItem(Car.id);
-                            }
-                          });
-                        }}
-                      >
-                        Remove Car
-                      </button>
-                      </div>
-                  </HashLink>
+                  <div className="card-footer text-center">
+                    <button
+                      className="btn btn-danger"
+                      onClick={() => {
+                        Swal.fire({
+                          title: 'Are you sure?',
+                          text: 'You are about to remove this car from your cart',
+                          icon: 'warning',
+                          showCancelButton: true,
+                          confirmButtonColor: '#d33',
+                          cancelButtonColor: '#3085d6',
+                          confirmButtonText: 'Yes, remove it!',
+                          cancelButtonText: 'Cancel'
+                        }).then((result) => {
+                          if (result.isConfirmed) {
+                            removeCarAndNavigate(Car.id, navigate);
+                          }
+                        });
+                      }}
+                    >
+                      Remove Car
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -83,7 +95,7 @@ function Cart() {
             <hr />
             <p className="fw-bold mt-2">Total: {Number(Car.discountedPrice) + 100} JD</p>
           </div>
-        </div>
+        </div >
       ) : (
         <div class="notInCart">
           <h3 className="card-title mb-3">
@@ -98,33 +110,38 @@ function Cart() {
             Go back to shop
           </HashLink>
         </div>
-      )}
+      )
+      }
 
 
-      {!auth && Car && (
-        <div className="container text-center wow fadeInUp" data-wow-delay="0.1s">
-          <p className="fs-5 fw-bold my-4">Please log in to continue</p>
+      {
+        !auth && Car && (
+          <div className="container text-center wow fadeInUp" data-wow-delay="0.1s">
+            <p className="fs-5 fw-bold my-4">Please log in to continue</p>
 
-          <Link to="/Registration">
-            <button className="btn btn-primary btn-lg mb-5">
-              CheckOut Payment
-            </button>
-          </Link>
+            <Link to="/Registration">
+              <button className="btn btn-primary btn-lg mb-5">
+                CheckOut Payment
+              </button>
+            </Link>
 
-        </div>
-      )}
-
-
-      {auth && Car && (
-        <div>
-          <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 className="section-title mt-5  text-center text-primary px-3 mb-2 fs-5 fs-md-6 fs-lg-7 fw-bold">
-              Payment Information
-            </h6>
           </div>
-          <Payment />
-        </div>
-      )}
+        )
+      }
+
+
+      {
+        auth && Car && (
+          <div>
+            <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+              <h6 className="section-title mt-5  text-center text-primary px-3 mb-2 fs-5 fs-md-6 fs-lg-7 fw-bold">
+                Payment Information
+              </h6>
+            </div>
+            <Payment />
+          </div>
+        )
+      }
     </>
   );
 }

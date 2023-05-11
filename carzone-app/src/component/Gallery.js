@@ -69,7 +69,7 @@ function Gallery({ posts, loading })
         </Breadcrumbs>
       </div>
 
-      <h1 className="my-5 display-3 fw-bold text-center text-dark">GALLERY</h1>
+      <h1 className="my-5 display-5 fw-bold text-center text-dark">GALLERY</h1>
 
       <div class="row">
         <div class="row height d-flex justify-content-center align-items-center">
