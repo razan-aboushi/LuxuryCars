@@ -4,6 +4,7 @@ import HeroCart from "./heroCart";
 import { AuthContext } from "./AuthContext";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 function Cart() {
   const [Car, setCar] = useState(
@@ -45,12 +46,29 @@ function Cart() {
                 </div>
                 <div className="card-footer text-center">
                   <HashLink smooth to="/Pagination/#">
-                    <button
-                      className="btn btn-danger"
-                      onClick={() => handleRemoveItem(Car.id)}
-                    >
-                      Remove Car
-                    </button>
+                    <div className="card-footer text-center">
+                      <button
+                        className="btn btn-danger"
+                        onClick={() => {
+                          Swal.fire({
+                            title: 'Are you sure?',
+                            text: 'You are about to remove this car from your cart',
+                            icon: 'warning',
+                            showCancelButton: true,
+                            confirmButtonColor: '#d33',
+                            cancelButtonColor: '#3085d6',
+                            confirmButtonText: 'Yes, remove it!',
+                            cancelButtonText: 'Cancel'
+                          }).then((result) => {
+                            if (result.isConfirmed) {
+                              handleRemoveItem(Car.id);
+                            }
+                          });
+                        }}
+                      >
+                        Remove Car
+                      </button>
+                      </div>
                   </HashLink>
                 </div>
               </div>
@@ -63,7 +81,7 @@ function Cart() {
             <hr />
             <p className="fw-bold mt-2 mb-2">Charge: 100 JD</p>
             <hr />
-            <p className="fw-bold mt-2">Total: {Number(Car.discountedPrice)+100} JD</p>
+            <p className="fw-bold mt-2">Total: {Number(Car.discountedPrice) + 100} JD</p>
           </div>
         </div>
       ) : (

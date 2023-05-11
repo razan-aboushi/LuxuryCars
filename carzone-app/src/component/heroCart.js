@@ -1,27 +1,25 @@
 import React from "react";
 import "./checkOutPayment.css";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
+
 
 function HeroCart() {
   return (
     <>
      
 
-      <div class="seoLanding deliveryLanding redesign mb-4">
-        <header class="banner">
-          <hgroup class="bannerMessaging">
+      <div className="seoLanding deliveryLanding redesign mb-4">
+        <header className="banner">
+          <hgroup className="bannerMessaging">
             <h1>Your Dream Car, Delivered!</h1>
-            <p class="heroSubheader header3">
+            <p className="heroSubheader header3">
               Any listing with a is eligible for{" "}
               <span className="fw-bold">LUXURY CARS</span> You can find the best
               cars and delivery and can be shipped directly to you
             </p>
           </hgroup>
-          <div class="headerImgWrap">
+          <div className="headerImgWrap">
             <img
-              class="headerImg1"
+              className="headerImg1"
               src="https://static1.cargurus.com/gfx/delivery/hero-delivery.svg"
               role="presentation"
               alt=""

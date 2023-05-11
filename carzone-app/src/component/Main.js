@@ -156,10 +156,10 @@ const Main = () => {
       {/* Carousel wrapper */}
 
       <div className="container-fulid rounded-5  my-5 mx-5 text-center p-lg-4 p-md-0 p-sm-0 ">
-        <div className="col-md-5  mx-auto my-5">
-          <h1 className="display-4 fw-bold" id="top">
+        <div className="col-md-7  mx-auto my-7">
+          <h2 className="display-6 fw-bold" id="top">
             Why Luxury Cars?
-          </h1>
+          </h2>
 
           <div className="row mt-5 gx-3 ">
             <div className="col-lg-4 ">
@@ -329,9 +329,9 @@ const Main = () => {
 
       <div className="container bg-white mb-5" id="cont-cards">
         <div className="row mb-3 text-center my-5">
-          <h1 className="text-center my-5 fw-bold text-body display-4" id="top">
+          <h3 className="text-center my-5 fw-bold text-body display-6" id="top">
             TOP RATED
-          </h1>
+          </h3>
 
           <div className="col-lg-3 col-12 themed-grid-col">
             <div
