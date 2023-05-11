@@ -22,6 +22,17 @@ const Registration = () => {
 
 
   const onLoginSuccess = (res) => {
+    if(localStorage.getItem("car"))
+  {
+   
+    navigate("/Cart/#");
+
+
+  }
+  else
+  {
+    navigate("/#")
+  }
     console.log("Login Success", res.profileObj);
     setShowLoginButton(false);
     setShowLogoutButton(true);
@@ -29,7 +40,7 @@ const Registration = () => {
       title: "<strong> Welcome Back </strong>",
     });
     setAuth(true);
-    navigate("/");
+
   };
 
 

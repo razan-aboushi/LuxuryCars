@@ -18,6 +18,7 @@ function Cart() {
     navigate('/Pagination');
   };
 
+  
 //Get the car that the user selected from the local storage
   const [Car, setCar] = useState(
     JSON.parse(localStorage.getItem("car")) || undefined);

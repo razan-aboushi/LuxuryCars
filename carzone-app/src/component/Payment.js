@@ -23,20 +23,42 @@ function Payment() {
     state: "",
   });
 
-  const [Car, setCar] = useState(
+
+  // Get the data of the car that the user selected or he wants to buy
+  const [Car] = useState(
     JSON.parse(localStorage.getItem("car")) || undefined
   );
 
-  function handleFormSubmit(event) {
-    event.preventDefault();
-    localStorage.setItem("formDataPayment", JSON.stringify(formData));
-  }
 
+  // Deal with the shipping form when it submit to the server side and set all the data in the local storage
   function handleFormSubmitAdress(event) {
     event.preventDefault();
     localStorage.setItem("formData", JSON.stringify(formDataAddress));
   }
 
+
+  // Deal with the cards form when it submit to the server side and set all the data in the local storage
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    localStorage.setItem("formDataPayment", JSON.stringify(formData));
+  }
+
+
+
+  // Handle or get the value of input that the user enter in the field
+  function handleInputChangeAddress(event) {
+    const { name, value } = event.target;
+
+// values for shipping form
+    setFormDataAddress({
+      ...formDataAddress,
+      [name]: value,
+    });
+
+  }
+
+
+    // values for the cards form
   function handleInputChangePayment(event) {
     const { name, value } = event.target;
     setFormData({
@@ -45,19 +67,17 @@ function Payment() {
     });
   }
 
-  function handleInputChangeAddress(event) {
-    const { name, value } = event.target;
-    setFormDataAddress({
-      ...formDataAddress,
-      [name]: value,
-    });
-  }
 
+
+  // transfer or change the tab if the user click on it
   function handleTabChange(newTab) {
     setTab(newTab);
   }
 
+
   return (
+
+    // Shipping form 
     <div className="container container-1 mt-5 mb-5 p-5">
       <div className="row">
         <div className="col-md-6">
@@ -165,7 +185,10 @@ function Payment() {
             </div>
           </div>
         </div>
+        {/* End shipping form */}
 
+
+        {/* Payment form  */}
         <div className="col-lg-6 col-md-8 mx-auto">
           <h6 className="text-center fw-bold mb-3 mt-2">
             You can pay a down payment of the car price using one of the
@@ -310,6 +333,7 @@ function Payment() {
               </div>
             )}
 
+            {/* Paypal teb */}
             {tab === "paypal" && (
               <div className="card">
                 <div className="card-body">

@@ -41,7 +41,7 @@ const Contact = () => {
           <hgroup className="bannerMessaging">
             <h1>Contact Us</h1>
             <p className="heroSubheader header3 mb-5">
-              If you have any question in your mind, what are you waiting for contact us now, we are here for you
+              If you have any question in your mind, what are you waiting for! contact us now, we are here for you
             </p>
           </hgroup>
           <div className="headerImgWrap">
