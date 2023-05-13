@@ -65,7 +65,7 @@ const Main = () => {
             >
               <div className="d-flex justify-content-center align-items-center h-100">
                 <div className="text-white text-center">
-                  <h2 className="mb-3 fw-bold display-5 " id="hero-1">
+                  <h2 className="mb-3 fw-bold display-6 " id="hero-1">
                     WELCOME TO{" "}
                     <span
                       className="text-primary fw-bold display-2 "
@@ -96,7 +96,7 @@ const Main = () => {
             >
               <div className="d-flex justify-content-center align-items-center h-100">
                 <div className="text-white text-start">
-                  <h1 className="fw-bold display-5 " id="hero-2">
+                  <h1 className="fw-bold display-6 " id="hero-2">
                     START SHOPPING TODAY
                   </h1>
                   <h2 className="fw-normal" style={{ color: "#6AB7FE" }}>
@@ -162,7 +162,7 @@ const Main = () => {
       {/* Carousel wrapper */}
 
       <div className="container-fulid rounded-5  my-5 mx-5 text-center p-lg-4 p-md-0 p-sm-0 ">
-        <div className="col-md-7  mx-auto my-7">
+        <div className="col-md-10  mx-auto my-7">
           <h2 className="display-6 fw-bold" id="top">
             Why Luxury Cars?
           </h2>
@@ -333,6 +333,9 @@ const Main = () => {
         </div>
       </div>
 
+
+
+      {/* Top rated section */}
       <div className="container bg-white mb-5" id="cont-cards">
         <div className="row mb-3 text-center my-5">
           <h3 className="text-center my-5 fw-bold text-body display-6" id="top">
@@ -441,6 +444,54 @@ const Main = () => {
           </div>
         </div>
       </div>
+
+
+      {/* car discount section */}
+      <div class="container">
+        <strong><h2 className="mb-5 text-center">Cars with Discounts</h2></strong>
+        <div className="row">
+          <div className="col-md-4">
+            <div className="card mb-4 shadow-sm">
+              <img className="card-imge-top" src="https://imgd.aeplcdn.com/1200x900/n/cw/ec/136217/x7-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75car1.jpg" alt="Car 1" />
+              <div className="card-body">
+                <h4 className="card-title">BMW X7</h4>
+                <p className="card-text">Arrive in style with the authority you deserve led by the redesigned front of the new BMW X7. Radiating presence with the illuminated ‘Iconic Glow’ kidney grille</p>
+                <strong><p className="card-text text-danger">Discounted Price: 25,000 JD</p></strong>
+                <button className="btn btn-dark add-to-cart-btn mt-3 d-flex justify-content">Buy Now</button>
+
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card mb-4 shadow-sm">
+              <img className="card-imge-top" src="https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_default/v1/editorial/vhs/2021-hyundai-i20-n-index.png" alt="Car 2" />
+              <div className="card-body">
+                <h4 className="card-title">Hyundai i20</h4>
+                <p className="card-text">The European-built i20 was introduced in 2010 in a soft takeover of the Korean-sourced Getz, and was a vital part of Hyundai's shift from a brand that made cheap cars to a brand </p>
+                <strong><p className="card-text text-danger">Discounted Price: 20,000 JD</p></strong>
+                <button className="btn btn-dark add-to-cart-btn mt-3 d-flex justify-content">Buy Now</button>
+
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card mb-4 shadow-sm">
+              <img className="card-imge-top" src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Toyota-Hilux-270720221820.jpg&w=872&h=578&q=75&c=1" alt="Car 3" />
+              <div className="card-body">
+                <h4 className="card-title">Toyota Hilux</h4>
+                <p className="card-text">Toyota is offering a miniature version of the Hilux with every McDonald’s Happy Meal in Japan. The off-road pick-up comes with a bunch of accessories</p>
+                <strong><p className="card-text text-danger">Discounted Price: 30,000 JD</p></strong>
+                <button className="btn btn-dark add-to-cart-btn mt-3 d-flex justify-content">Buy Now</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
     </>
   );
 };

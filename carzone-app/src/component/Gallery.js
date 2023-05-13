@@ -41,7 +41,7 @@ function Gallery({ posts, loading }) {
 
 
       <div class="container-fluid bg-primary py-5 page-headerContact" style={{
-        backgroundImage: `url('https://dealerimages.dealereprocess.com/image/upload/2378751')`, backgroundRepeat: "no-repeat", backgroundSize: "cover"
+        backgroundImage: `url('https://dealerimages.dealereprocess.com/image/upload/2378751')`, backgroundRepeat: "no-repeat", backgroundSize: "cover" , height:"30rem"
       }}>
         <div class="container py-5">
           <div class="row justify-content-center">

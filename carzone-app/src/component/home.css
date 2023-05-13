@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-/* * {
+ {
   font-family: "arial";
 } */
 
@@ -252,3 +252,33 @@
     max-width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style for the discount section */
+/* Style the card image */
+.card-imge-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Center the cards on desktop */
+@media only screen and (min-width: 992px) {
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+} 

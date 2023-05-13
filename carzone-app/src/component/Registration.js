@@ -124,7 +124,7 @@ const Registration = () => {
             >
               LOGIN
             </Button>
-            <p>
+            <p className="mt-2"> 
               don't have an account?{" "}
               <Link style={{ textDecoration: "none" }} to="/SignUp">
                 Sign Up

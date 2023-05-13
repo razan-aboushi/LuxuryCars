@@ -201,7 +201,7 @@ const SignUp = () =>
               SIGN UP{" "}
             </Button>
             {ErrorMsg && <p style={{ color: "red" }}>{ErrorMsg}</p>}
-            <p>
+            <p className="mt-3">
               Already have an account?{" "}
               <Link style={{ textDecoration: "none" }} to="/Registration">
                 Sign In
