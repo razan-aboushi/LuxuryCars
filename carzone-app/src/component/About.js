@@ -65,29 +65,39 @@ function About() {
 
   return (
     <>
-      <div className="d-flex m-5">
-        <Breadcrumbs aria-label="breadcrumb">
-          <Link underline="hover" color="dark" href="/">
-            <h5 className="text-dark">Home</h5>
-          </Link>
-          <Typography color="text.primary">
-            {" "}
-            <h5 className="text-dark">About us</h5>
-          </Typography>
-        </Breadcrumbs>
+     
+     <div class="container-fluid bg-primary py-5 page-headerContact" style={{
+        backgroundImage: `url('https://appindianews.com/wp-content/uploads/2019/06/about-us.png')`, backgroundRepeat: "no-repeat",backgroundSize:"cover"
+      }}>
+        <div class="container py-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+              <h1 class="display-3 text-dark animated slideInDown">About Us</h1>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                  <Breadcrumbs aria-label="breadcrumb">
+                    <Link underline="hover" color="dark" href="/">
+                      <h5 className="text-dark">Home</h5>
+                    </Link>
+                    <Typography color="text.primary">
+                      {" "}
+                      <h5 className="text-dark">About</h5>
+                    </Typography>
+                  </Breadcrumbs>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="container-fluid bg-light py-5 mx-0 w-100 animate__animated animate__fadeIn d-flex justify-content-center">
         <div className="row">
           <div className="col-md-12">
-            <div className="text-center">
-              <h2 className="section-heading text-uppercase mt-5 mb-5">
-                About Our Company
-              </h2>
               <div className="d-flex justify-content-center">
                 <div className="col-md-10">
 
-                  <div className="d-flex justify-content-start align-items-center mt-5">
+                  <div className="d-flex justify-content-start align-items-center mt-5 mb-5">
                     <img
                       src="https://cfx-wp-images.imgix.net/2020/01/Car-Dealer-Talking-With-Customers.jpg?auto=compress%2Cformat&fit=crop&h=620&ixlib=php-3.3.0&w=930&wpsize=neve-blog&s=bb5420e7fbc17c16c14120b352704b3b"
                       alt="image about"
@@ -96,7 +106,7 @@ function About() {
                     />
                     <header className="text-left">
                       <h3 class= "mb-4 text-left">Welcome To Luxury Cars</h3>
-                      <h5 class="text-right animate__animated animate__fadeInRight">
+                      <h5 class=" animate__animated animate__fadeInRight">
                         We are a company that specializes in providing top-quality products and services to our clients. Our team consists of highly skilled professionals who are committed to delivering exceptional results that exceed our clients' expectations. We strive to build long-lasting relationships with our clients based on trust, integrity, and mutual respect.
                       </h5>
                     </header>
@@ -104,7 +114,6 @@ function About() {
 
                   </div>
                 </div>
-              </div>
 
             </div>
 

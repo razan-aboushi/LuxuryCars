@@ -74,7 +74,8 @@ const Registration = () => {
   };
 
   return (
-    <div id="signInCon" className="container1 mt-5 mb-5 mx-5">
+   
+    <div id="signInCon" className="container1 mx-5"   style={{ height: "40rem" }}>
       <div className="IN row justify-content-start">
         <div className="col-lg-5 col-md-6 col-sm-8">
           <Form

@@ -3,8 +3,9 @@ import Payment from "./Payment";
 import HeroCart from "./heroCart";
 import { AuthContext } from "./AuthContext";
 import { HashLink } from "react-router-hash-link";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate,redirect  } from "react-router-dom";
 import Swal from "sweetalert2";
+
 
 
 
@@ -12,23 +13,22 @@ function Cart() {
 
 
   //After remove the car from the cart and click on the confirm message , the user will navigate directly to the gallery 
-  function removeCarAndNavigate (carId, navigate)
-   {
+  function removeCarAndNavigate(carId, navigate) {
     handleRemoveItem(carId);
     navigate('/Pagination');
   };
 
-  
-//Get the car that the user selected from the local storage
+
+  //Get the car that the user selected from the local storage
   const [Car, setCar] = useState(
     JSON.parse(localStorage.getItem("car")) || undefined);
 
 
-// to check if the user log in the website or not 
+  // to check if the user log in the website or not 
   const { auth } = useContext(AuthContext);
 
 
-// when remove the car from the cart , check for the id in the local storage and them delete the car and empty the local storage
+  // when remove the car from the cart , check for the id in the local storage and them delete the car and empty the local storage
   function handleRemoveItem(id) {
     localStorage.removeItem("car");
     setCar({});
@@ -120,20 +120,24 @@ function Cart() {
       }
 
 
-      {
-        !auth && Car && (
-          <div className="container text-center wow fadeInUp" data-wow-delay="0.1s">
-            <p className="fs-5 fw-bold my-4">Please log in to continue</p>
+      {!auth && Car && (
+        <div className="container text-center wow fadeInUp" data-wow-delay="0.1s">
+          <p className="fs-5 fw-bold my-4">Please log in to continue</p>
 
-            <Link to="/Registration">
-              <button className="btn btn-primary btn-lg mb-5">
-                CheckOut Payment
-              </button>
-            </Link>
+          <Link to="/Registration">
+            <button className="btn btn-primary btn-lg mb-5">
+              CheckOut Payment
+            </button>
+          </Link>
 
-          </div>
-        )
+          {auth && (
+            <redirect to="/Cart" />
+          )}
+
+        </div>
+      )
       }
+
 
 
       {

@@ -114,8 +114,8 @@ const SignUp = () =>
   return (
     <div
       id="signUpCon"
-      className="container mt-5 mb-5"
-      style={{ height: "35rem" }}
+      className="container "
+      style={{ height: "40rem" }}
     >
       <div className="row justify-content-end">
         <div className="col-lg-5 col-md-12 col-sm-8 ">

@@ -40,7 +40,7 @@ const MainPagitante = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="container mt-5">
+    <div>
       <Gallery posts={currentCars} loading={loading} />
       <Pagination
         carsPerPage={carsPerPage}

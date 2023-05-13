@@ -25,7 +25,7 @@ function Products({ brand }) {
         <>
           <div>
             <div
-              className="bigCon p-5 text-center bg-image rounded-3"
+              className="bigCon p-5 text-center bg-image"
               style={{
                 backgroundImage: `url(https://wallpaper.dog/large/20526644.jpg)`,
               }}
@@ -34,26 +34,27 @@ function Products({ brand }) {
                 <div className="position-relative d-flex justify-content-center align-items-center h-100">
                   <div className="text-white">
                     <h1 className="mb-3">TOYOTA</h1>
+                    <div className="d-flex m-5">
+                      <Breadcrumbs aria-label="breadcrumb">
+                        <Link underline="hover" color="dark" href="/">
+                          <h5 className="text-white">Home</h5>
+                        </Link>
+                        <Link underline="hover" color="dark" href="/Pagination">
+                          <h5 className="text-white">Gallery</h5>
+                        </Link>
+                        <Typography color="text.primary">
+                          {" "}
+                          <h5 className="text-white">Toyota</h5>
+                        </Typography>
+                      </Breadcrumbs>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="d-flex m-5">
-            <Breadcrumbs aria-label="breadcrumb">
-              <Link underline="hover" color="dark" href="/">
-                <h5 className="text-dark">Home</h5>
-              </Link>
-              <Link underline="hover" color="dark" href="/Pagination">
-                <h5 className="text-dark">Gallery</h5>
-              </Link>
-              <Typography color="text.primary">
-                {" "}
-                <h5 className="text-dark">Toyota</h5>
-              </Typography>
-            </Breadcrumbs>
-          </div>
+
 
           {toyota.map((car) => {
             return (
@@ -121,7 +122,7 @@ function Products({ brand }) {
                       <h1 className="display-5 fw-bolder">{car.type} </h1>
                       <div className="fs-5 mb-5">
                         <span className="text-decoration-line-through">
-                          {car.price} 
+                          {car.price}
                         </span>
                         <span> {car.discountedPrice} </span>
                       </div>
@@ -161,35 +162,36 @@ function Products({ brand }) {
         <>
           <div>
             <div
-              className="bigCon p-5 text-center bg-image rounded-3"
+              className="bigCon p-5 text-center bg-image"
               style={{
-                backgroundImage: `url(https://www.hdcarwallpapers.com/walls/hyundai_vision_t_concept_2019_4k_6-HD.jpg)`,
+                backgroundImage: `url(https://di-uploads-pod17.dealerinspire.com/planethyundai1/uploads/2019/06/2091-hyundai-lineup.jpg)`,
               }}
             >
               <div className="mask">
                 <div className="position-relative d-flex justify-content-center align-items-center h-100">
                   <div className="text-white">
                     <h1 className="mb-3">HYUNDAI</h1>
+                    <div className="d-flex m-5">
+                      <Breadcrumbs aria-label="breadcrumb">
+                        <Link underline="hover" color="white" href="/">
+                          <h5 className="text-white">Home</h5>
+                        </Link>
+                        <Link underline="hover" color="white" href="/Pagination">
+                          <h5 className="text-white">Gallery</h5>
+                        </Link>
+                        <Typography color="text.primary">
+                          {" "}
+                          <h5 className="text-white">Hyundai</h5>
+                        </Typography>
+                      </Breadcrumbs>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="d-flex m-5">
-            <Breadcrumbs aria-label="breadcrumb">
-              <Link underline="hover" color="dark" href="/">
-                <h5 className="text-dark">Home</h5>
-              </Link>
-              <Link underline="hover" color="dark" href="/Pagination">
-                <h5 className="text-dark">Gallery</h5>
-              </Link>
-              <Typography color="text.primary">
-                {" "}
-                <h5 className="text-dark">Hyundai</h5>
-              </Typography>
-            </Breadcrumbs>
-          </div>
+
 
           {hyundai.map((car) => {
             return (
@@ -257,7 +259,7 @@ function Products({ brand }) {
                       <h1 className="display-5 fw-bolder">{car.type} </h1>
                       <div className="fs-5 mb-5">
                         <span className="text-decoration-line-through">
-                           {car.price}
+                          {car.price}
                         </span>
                         <span> {car.discountedPrice}</span>
                       </div>
@@ -297,7 +299,7 @@ function Products({ brand }) {
         <>
           <div>
             <div
-              className="bigCon p-5 text-center bg-image rounded-3"
+              className="bigCon p-5 text-center bg-image"
               style={{
                 backgroundImage: `url(https://www.pixelstalk.net/wp-content/uploads/images6/BMW-Desktop-Wallpaper-4K.jpg)`,
               }}
@@ -306,26 +308,27 @@ function Products({ brand }) {
                 <div className="position-relative d-flex justify-content-center align-items-center h-100">
                   <div className="text-white">
                     <h1 className="mb-3">BMW</h1>
+                    <div className="d-flex m-5">
+                      <Breadcrumbs aria-label="breadcrumb">
+                        <Link underline="hover" color="white" href="/">
+                          <h5 className="text-white">Home</h5>
+                        </Link>
+                        <Link underline="hover" color="white" href="/Pagination">
+                          <h5 className="text-white">Gallery</h5>
+                        </Link>
+                        <Typography color="text.primary">
+                          {" "}
+                          <h5 className="text-white">BMW</h5>
+                        </Typography>
+                      </Breadcrumbs>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="d-flex m-5">
-            <Breadcrumbs aria-label="breadcrumb">
-              <Link underline="hover" color="dark" href="/">
-                <h5 className="text-dark">Home</h5>
-              </Link>
-              <Link underline="hover" color="dark" href="/Pagination">
-                <h5 className="text-dark">Gallery</h5>
-              </Link>
-              <Typography color="text.primary">
-                {" "}
-                <h5 className="text-dark">BMW</h5>
-              </Typography>
-            </Breadcrumbs>
-          </div>
+
 
           {BMW.map((car) => {
             return (
@@ -393,7 +396,7 @@ function Products({ brand }) {
                       <h1 className="display-5 fw-bolder">{car.type} </h1>
                       <div className="fs-5 mb-5">
                         <span className="text-decoration-line-through">
-                           {car.price}
+                          {car.price}
                         </span>
                         <span> {car.discountedPrice}</span>
                       </div>
